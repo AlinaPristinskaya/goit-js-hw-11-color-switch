@@ -7,7 +7,7 @@ const start = document.querySelector('[data-action="start"]');
 const stop = document.querySelector('[data-action="stop"]');
 
 start.addEventListener('click', onclickStart);
-let intervalId = NaN;
+let intervalId = null;
 function onclickStart() {
   intervalId = setInterval(bodyStyle, 1000, 1000);
   start.disabled = true;
